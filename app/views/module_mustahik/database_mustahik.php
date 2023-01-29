@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                 <th>Nama</th>
                                 <th>Nama Kepala Keluarga</th>
                                 <th>Tempat Lahir</th>
-                                <th>Tgl Lahir</th>
+                                <th>Usia</th>
                                 <th>Gender</th>
                                 <th>Gol. Darah</th>
                                 <th>Pekerjaan</th>
@@ -41,7 +41,12 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                 <td><?= $m->nama ?></td>
                                 <td><?= $m->nama_kk ?></td>
                                 <td><?= $m->tempat_lahir ?></td>
-                                <td><?= $m->tgl_lahir ?></td>
+                                <td><?php $lahir    =new DateTime($m->tgl_lahir);
+                                      $today        =new DateTime();
+                                      $umur = $today->diff($lahir);
+                                      echo $umur->y; echo " Tahun";
+                                    ?></td>
+                                <!-- <td><?= indonesian_date($m->tgl_lahir) ?></td> -->
                                 <td><?= $m->gender ?></td>
                                 <td><?= $m->gol_darah ?></td>
                                 <td><?= $m->pekerjaan ?></td>
@@ -62,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             <th>Nama</th>
                             <th>Nama Kepala Keluarga</th>
                             <th>Tempat Lahir</th>
-                            <th>Tgl Lahir</th>
+                            <th>Usia</th>
                             <th>Gender</th>
                             <th>Gol. Darah</th>
                             <th>Pekerjaan</th>
@@ -115,7 +120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                   <div class="col-md-6">
                       <div class="form-group">
                           <label for="tgl_lahir">Tanggal Lahir *</label>
-                          <input type="text" id="tgl_lahir" name="tgl_lahir" class="form-control" placeholder="28-12-1986">
+                          <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control" required="required">
                       </div>
                   </div>
                   <div class="col-md-6">

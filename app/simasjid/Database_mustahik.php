@@ -18,11 +18,19 @@ class Database_mustahik extends SIMASJID_Core {
 		$this->css_plugin = array(
 			'fontawesome/css/all.min',
 			'mdi/css/materialdesignicons.min',
-			'datatables/datatables.min'
+			'datatables/datatables.min',
+			'daterangepicker/daterangepicker',
+			'timeline-master/dist/css/timeline.min'
 		);
 
 		$this->js_plugin = array(
-			'datatables/datatables.min'
+			'datatables/datatables.min',
+			'momentjs/moment.min',
+			'momentjs/moment-timezone',
+			'momentjs/moment-timezone-with-data',
+			'momentjs/datetime-moment',
+			'daterangepicker/daterangepicker',
+			'timeline-master/dist/js/timeline.min'
 		);
 
 		$this->_partial = array(
@@ -115,9 +123,10 @@ class Database_mustahik extends SIMASJID_Core {
 			array(
 				'field' => 'tgl_lahir',
 				'label' => 'Tgl Lahir',
-				'rules' => 'trim|regex_match[/[a-zA-Z0-9 @&#\/\-_.,]+$/]',
+				'rules' => 'required|regex_date',
 				'errors'=> [
-					'regex_match' => 'Format sesuai contoh 28-12-1986 maksimal 8 karakter.'
+					'required' => '{field} harus diisi.',
+					'regex_date' => '{field} harus merupakan tanggal yang valid.'
 				]
 			),
 			array(
