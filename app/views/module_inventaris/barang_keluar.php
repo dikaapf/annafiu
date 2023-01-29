@@ -135,7 +135,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
               <div class="row">
                   <div class="col-md-12">
                       <div class="form-group">
-                          <label for="stok_barang">Stok Barang</label>
+                          <label for="stok_barang">Aset Sabilillah</label>
                           <input type="text" id="stok_barang" name="stok" class="form-control bg-dark" placeholder="0.0" readonly="readonly">
                       </div>
                   </div>

@@ -131,7 +131,7 @@ class Inventarisasi extends SIMASJID_Core {
 		$this->js 		= 'halaman/stok_barang';
 		
 		$this->_data 	= array(
-			'title' 	=> 'An-Naafiu - Stok Barang',
+			'title' 	=> 'An-Naafiu - Aset Sabilillah',
 			'stok_brg'	=> $this->inventarisasi_m->getStokBarang()
 		);
 
@@ -354,7 +354,7 @@ class Inventarisasi extends SIMASJID_Core {
 		);
 		$this->form_validation->set_rules(
 				'stok',
-				'Stok Barang',
+				'Aset Sabilillah',
 				'required|numeric',
 				[
 					'required' => '{field} wajib diisi.',
@@ -581,7 +581,7 @@ class Inventarisasi extends SIMASJID_Core {
 				);
 				$this->form_validation->set_rules(
 					'stok',
-					'Stok Barang',
+					'Aset Sabilillah',
 					'required|numeric',
 					[
 						'required' => '{field} wajib diisi.',

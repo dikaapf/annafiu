@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-header">
-                    <h4 class="card-title float-left mt-2">Stok Barang</h4>
+                    <h4 class="card-title float-left mt-2">Aset Sabilillah</h4>
                   </div>
                   <div class="card-body">
                     <h3 class="subtitle"><?= $this->app->nama_masjid ?></h3>
