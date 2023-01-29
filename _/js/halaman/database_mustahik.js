@@ -62,7 +62,7 @@
                     });
 
                     doc.content[1].margin = [ 10, 0, 10, 0 ];
-                    doc.content[1].table.widths = [150,100,200,100,100];
+                    doc.content[1].table.widths = [100,100,80,60,40,40,60,100,60,60,66,60];
                 },
                 exportOptions: {
                     columns: [0,1,2,3,4,5,6,7,8,9,10,11]
