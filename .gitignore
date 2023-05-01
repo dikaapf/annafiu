@@ -1,7 +1,6 @@
 _/uploads/*
 app/cache/*
 app/cache/simasjid_setting
-app/config/*
 app/config/config.php
 app/config/database.php
 .htaccess
