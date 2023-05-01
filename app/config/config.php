@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 //$config['base_url'] = BASE_URL;
-$config['base_url'] = 'http://localhost/simasjid';
+$config['base_url'] = 'http://kel2.remajacemput.pe.hu';
 /*
 |--------------------------------------------------------------------------
 | Index File
